@@ -1,0 +1,44 @@
+
+<table>
+  <tr>
+    <td colspan="4">
+      <input id="display" class="display" type="number" step="any" [value]="display" (input)="actualizaValor($event)"/>
+    </td>
+  </tr>
+  <tr>
+    <td><btn-operador operador = 'MC' (click)="clickOperador($event)"></btn-operador></td>
+    <td><btn-operador operador = "M+" (click)="clickOperador($event)"></btn-operador></td>
+    <td><btn-operador operador = "M-" (click)="clickOperador($event)"></btn-operador></td>
+    <td><btn-operador operador = "MS" (click)="clickOperador($event)"></btn-operador></td>
+  </tr>
+  <tr>
+    <td><btn-operador operador = 'CE' (click)="clickOperador($event)"></btn-operador></td>
+    <td><btn-operador operador = "C" (click)="clickOperador($event)"></btn-operador></td>
+    <td><btn-operador operador = "B" (click)="clickOperador($event)"></btn-operador></td>
+    <td><btn-operador operador = "/" (click)="clickOperador($event)"></btn-operador></td>
+  </tr>
+  <tr>
+    <td><btn-numero [numero] = 7 (click)="clickNumero($event)"></btn-numero></td>
+    <td><btn-numero [numero] = 8 (click)="clickNumero($event)"></btn-numero></td>
+    <td><btn-numero [numero] = 9 (click)="clickNumero($event)"></btn-numero></td>
+    <td><btn-operador operador = "*" (click)="clickOperador($event)"></btn-operador></td>
+  </tr>
+  <tr>
+    <td><btn-numero [numero] = 4 (click)="clickNumero($event)"></btn-numero></td>
+    <td><btn-numero [numero] = 5 (click)="clickNumero($event)"></btn-numero></td>
+    <td><btn-numero [numero] = 6 (click)="clickNumero($event)"></btn-numero></td>
+    <td><btn-operador operador = "-" (click)="clickOperador($event)"></btn-operador></td>
+  </tr>
+  <tr>
+    <td><btn-numero [numero] = 1 (click)="clickNumero($event)"></btn-numero></td>
+    <td><btn-numero [numero] = 2 (click)="clickNumero($event)"></btn-numero></td>
+    <td><btn-numero [numero] = 3 (click)="clickNumero($event)"></btn-numero></td>
+    <td><btn-operador operador = "+" (click)="clickOperador($event)"></btn-operador></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><btn-numero [numero] = 0 (click)="clickNumero($event)"></btn-numero></td>
+    <td></td>
+    <td><btn-operador operador = "=" (click)="clickOperador($event)"></btn-operador></td>
+  </tr>
+</table>
