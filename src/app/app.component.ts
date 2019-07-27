@@ -19,7 +19,7 @@ export class AppComponent {
     this.display = "0";
     this.operadorAntes = false;
     this.memoriaM = 0
-  }
+  } 
 
   /** 
    * @description Actualiza el valor en memoria cuando ingresan numeros con el teclado
