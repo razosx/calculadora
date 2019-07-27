@@ -42,12 +42,9 @@ export class AppComponent {
   }
 
   /** 
-   * @description Dependiendo el operador realiza una acci'on 
-   * Falta refactorizar mucho y pensar bien la l'ogica
+   * @description Dependiendo el operador realiza una acción
   */
   clickOperador(e){
-    //si está en los operadores básicos hace la lógica de cualquier operación
-    //de lo contrario solo hace acciones como borrar o las de memoria
     if(!(this.nuevoOperador == '=' && e.target.value == '=')){
       this.ultimoOperador = this.nuevoOperador;      
     }
@@ -88,18 +85,15 @@ export class AppComponent {
           console.log('otro');
       }
       this.operadorAntes = false;
-    }           
+    }          
   }
 
   
 /** 
  * @description Dependiendo el operador realiza una acci'on 
- * Falta refactorizar mucho y pensar bien la l'ogica
+ * 
 */
-clickOperadorOtro(e){
-  //si está en los operadores básicos hace la lógica de cualquier operación
-  //de lo contrario solo hace acciones como borrar o las de memoria
-    
+clickOperadorOtro(e){    
   switch(e.target.value){
     case 'C':
       this.display = "0";
